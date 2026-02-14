@@ -1,0 +1,29 @@
+{
+  "maintained": true,
+  "alwaysMaintainEffects": ["minecraft:night_vision"],
+  "t1": {
+    "effects": [
+      { "effectId": "minecraft:night_vision", "amplifier": 0, "durationTicks": 400 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "triggerDescription": "At Nighttime"
+  },
+  "t2": {
+    "effects": [
+      { "effectId": "minecraft:night_vision", "amplifier": 0, "durationTicks": 400 },
+      { "effectId": "minecraft:strength", "amplifier": 0, "durationTicks": 60 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 300,
+    "triggerDescription": "At Nighttime"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:night_vision", "amplifier": 0, "durationTicks": 400 },
+      { "effectId": "minecraft:strength", "amplifier": 0, "durationTicks": 80 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 240,
+    "triggerDescription": "Night or Low Light"
+  }
+}

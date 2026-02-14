@@ -1,0 +1,25 @@
+{
+  "t1": {
+    "effects": [],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 500,
+    "displayLabel": "+1 Hunger",
+    "triggerDescription": "Below 10 Hunger"
+  },
+  "t2": {
+    "effects": [],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 400,
+    "displayLabel": "+2 Hunger",
+    "triggerDescription": "Below 14 Hunger"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:regeneration", "amplifier": 0, "durationTicks": 40 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 300,
+    "displayLabel": "+2 Hunger + Regeneration",
+    "triggerDescription": "Below 17 Hunger"
+  }
+}

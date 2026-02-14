@@ -1,0 +1,26 @@
+{
+  "t1": {
+    "effects": [
+      { "effectId": "minecraft:strength", "amplifier": 0, "durationTicks": 40 }
+    ],
+    "triggerType": "ON_KILL",
+    "cooldownTicks": 160,
+    "triggerDescription": "On Kill"
+  },
+  "t2": {
+    "effects": [
+      { "effectId": "minecraft:strength", "amplifier": 0, "durationTicks": 100 }
+    ],
+    "triggerType": "ON_KILL",
+    "cooldownTicks": 160,
+    "triggerDescription": "On Kill"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:strength", "amplifier": 1, "durationTicks": 80 }
+    ],
+    "triggerType": "ON_KILL",
+    "cooldownTicks": 160,
+    "triggerDescription": "On Kill"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "t1": {
+    "effects": [
+      { "effectId": "minecraft:regeneration", "amplifier": 0, "durationTicks": 30 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 200,
+    "triggerDescription": "Below 30% HP"
+  },
+  "t2": {
+    "effects": [
+      { "effectId": "minecraft:regeneration", "amplifier": 0, "durationTicks": 40 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 160,
+    "triggerDescription": "Below 40% HP"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:regeneration", "amplifier": 0, "durationTicks": 60 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 120,
+    "triggerDescription": "Below 50% HP"
+  }
+}

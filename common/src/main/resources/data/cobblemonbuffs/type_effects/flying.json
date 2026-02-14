@@ -1,0 +1,28 @@
+{
+  "t1": {
+    "effects": [
+      { "effectId": "minecraft:slow_falling", "amplifier": 0, "durationTicks": 100 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 200,
+    "triggerDescription": "While Airborne"
+  },
+  "t2": {
+    "effects": [
+      { "effectId": "minecraft:slow_falling", "amplifier": 0, "durationTicks": 150 },
+      { "effectId": "minecraft:jump_boost", "amplifier": 0, "durationTicks": 60 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 200,
+    "triggerDescription": "While Airborne"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:slow_falling", "amplifier": 0, "durationTicks": 200 },
+      { "effectId": "minecraft:jump_boost", "amplifier": 0, "durationTicks": 80 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 200,
+    "triggerDescription": "While Airborne"
+  }
+}

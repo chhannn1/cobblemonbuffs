@@ -1,0 +1,29 @@
+{
+  "t1": {
+    "effects": [
+      { "effectId": "minecraft:poison", "amplifier": 0, "durationTicks": 60 }
+    ],
+    "triggerType": "ON_HIT_RECEIVED",
+    "target": "OTHER",
+    "cooldownTicks": 240,
+    "triggerDescription": "When Hit"
+  },
+  "t2": {
+    "effects": [
+      { "effectId": "minecraft:poison", "amplifier": 0, "durationTicks": 100 }
+    ],
+    "triggerType": "ON_HIT_RECEIVED",
+    "target": "OTHER",
+    "cooldownTicks": 160,
+    "triggerDescription": "When Hit"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:poison", "amplifier": 1, "durationTicks": 80 }
+    ],
+    "triggerType": "ON_HIT_RECEIVED",
+    "target": "OTHER",
+    "cooldownTicks": 120,
+    "triggerDescription": "When Hit"
+  }
+}

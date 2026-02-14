@@ -1,0 +1,26 @@
+{
+  "t1": {
+    "effects": [
+      { "effectId": "minecraft:fire_resistance", "amplifier": 0, "durationTicks": 50 }
+    ],
+    "triggerType": "ON_HIT_RECEIVED",
+    "cooldownTicks": 220,
+    "triggerDescription": "On Fire Damage"
+  },
+  "t2": {
+    "effects": [
+      { "effectId": "minecraft:fire_resistance", "amplifier": 0, "durationTicks": 60 }
+    ],
+    "triggerType": "ON_HIT_RECEIVED",
+    "cooldownTicks": 200,
+    "triggerDescription": "On Fire Damage"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:fire_resistance", "amplifier": 0, "durationTicks": 100 }
+    ],
+    "triggerType": "ON_HIT_RECEIVED",
+    "cooldownTicks": 200,
+    "triggerDescription": "On Fire Damage"
+  }
+}

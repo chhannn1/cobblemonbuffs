@@ -1,0 +1,26 @@
+{
+  "t1": {
+    "effects": [
+      { "effectId": "minecraft:regeneration", "amplifier": 0, "durationTicks": 40 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 100,
+    "triggerDescription": "On Nature, Not Full HP"
+  },
+  "t2": {
+    "effects": [
+      { "effectId": "minecraft:regeneration", "amplifier": 0, "durationTicks": 60 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 120,
+    "triggerDescription": "On Nature, Not Full HP"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:regeneration", "amplifier": 1, "durationTicks": 40 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 100,
+    "triggerDescription": "On Ground, Not Full HP"
+  }
+}

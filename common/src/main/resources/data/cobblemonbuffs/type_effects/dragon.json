@@ -1,0 +1,26 @@
+{
+  "t1": {
+    "effects": [
+      { "effectId": "minecraft:regeneration", "amplifier": 0, "durationTicks": 30 }
+    ],
+    "triggerType": "ON_KILL",
+    "cooldownTicks": 200,
+    "triggerDescription": "On Kill"
+  },
+  "t2": {
+    "effects": [
+      { "effectId": "minecraft:regeneration", "amplifier": 0, "durationTicks": 40 }
+    ],
+    "triggerType": "ON_KILL",
+    "cooldownTicks": 160,
+    "triggerDescription": "On Kill"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:regeneration", "amplifier": 0, "durationTicks": 60 }
+    ],
+    "triggerType": "ON_KILL",
+    "cooldownTicks": 120,
+    "triggerDescription": "On Kill"
+  }
+}

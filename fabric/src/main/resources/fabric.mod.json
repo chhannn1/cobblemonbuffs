@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblemonbuffs",
+  "version": "${version}",
+  "name": "Cobblemon Buffs",
+  "description": "A Cobblemon addon that makes your Pokemon radiate Auras, passive status effects that scale with level and friendship.",
+  "authors": [
+    "chan1"
+  ],
+  "license": "CC0-1.0",
+  "icon": "assets/cobblemonbuffs/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.chan1.cobblemonbuffs.fabric.CobblemonBuffsFabric"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.chan1.cobblemonbuffs.fabric.client.CobblemonBuffsFabricClient"
+      }
+    ]
+  },
+  "mixins": [
+    "cobblemonbuffs.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*",
+    "cobblemon": ">=1.6.0",
+    "fabric-language-kotlin": ">=1.13.0"
+  }
+}

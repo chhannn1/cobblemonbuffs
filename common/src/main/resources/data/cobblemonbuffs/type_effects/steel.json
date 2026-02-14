@@ -1,0 +1,26 @@
+{
+  "t1": {
+    "effects": [
+      { "effectId": "minecraft:resistance", "amplifier": 0, "durationTicks": 40 }
+    ],
+    "triggerType": "ON_HIT_RECEIVED",
+    "cooldownTicks": 240,
+    "triggerDescription": "When Hit"
+  },
+  "t2": {
+    "effects": [
+      { "effectId": "minecraft:resistance", "amplifier": 0, "durationTicks": 80 }
+    ],
+    "triggerType": "ON_HIT_RECEIVED",
+    "cooldownTicks": 160,
+    "triggerDescription": "When Hit"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:resistance", "amplifier": 0, "durationTicks": 100 }
+    ],
+    "triggerType": "ON_HIT_RECEIVED",
+    "cooldownTicks": 160,
+    "triggerDescription": "When Hit"
+  }
+}

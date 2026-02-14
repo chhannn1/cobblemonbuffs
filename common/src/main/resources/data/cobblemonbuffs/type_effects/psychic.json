@@ -1,0 +1,32 @@
+{
+  "t1": {
+    "effects": [
+      { "effectId": "minecraft:levitation", "amplifier": 0, "durationTicks": 30 }
+    ],
+    "triggerType": "ON_ATTACK",
+    "target": "OTHER",
+    "cooldownTicks": 200,
+    "triggerDescription": "On Attack"
+  },
+  "t2": {
+    "effects": [
+      { "effectId": "minecraft:levitation", "amplifier": 0, "durationTicks": 30 },
+      { "effectId": "minecraft:slowness", "amplifier": 0, "durationTicks": 70 }
+    ],
+    "triggerType": "ON_ATTACK",
+    "target": "OTHER",
+    "cooldownTicks": 160,
+    "triggerDescription": "On Attack"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:levitation", "amplifier": 1, "durationTicks": 40 },
+      { "effectId": "minecraft:slowness", "amplifier": 1, "durationTicks": 70 },
+      { "effectId": "minecraft:glowing", "amplifier": 0, "durationTicks": 100 }
+    ],
+    "triggerType": "ON_ATTACK",
+    "target": "OTHER",
+    "cooldownTicks": 120,
+    "triggerDescription": "On Attack"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "t1": {
+    "effects": [
+      { "effectId": "minecraft:water_breathing", "amplifier": 0, "durationTicks": 60 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 240,
+    "triggerDescription": "While In Water"
+  },
+  "t2": {
+    "effects": [
+      { "effectId": "minecraft:water_breathing", "amplifier": 0, "durationTicks": 100 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 200,
+    "triggerDescription": "While In Water"
+  },
+  "t3": {
+    "effects": [
+      { "effectId": "minecraft:water_breathing", "amplifier": 0, "durationTicks": 160 }
+    ],
+    "triggerType": "CONDITIONAL_TICK",
+    "cooldownTicks": 200,
+    "triggerDescription": "While In Water"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "cobblemonbuffs.aura.gained": "%s radiates a %s Aura!",
+  "cobblemonbuffs.aura.lost": "The %s Aura fades...",
+  "cobblemonbuffs.aura.awakened": "%s's aura burns brighter!",
+  "cobblemonbuffs.synergy.discovered": "Synergy Discovered: %s!",
+  "cobblemonbuffs.harmony.gained": "Party Harmony activated!",
+  "cobblemonbuffs.harmony.lost": "Party Harmony faded.",
+  "cobblemonbuffs.mono.gained": "Mono Mastery: %s activated!",
+  "cobblemonbuffs.mono.lost": "Mono Mastery faded.",
+  "cobblemonbuffs.aura.tier_up": "%s aura reached Tier %s!",
+  "cobblemonbuffs.aura.tier_down": "%s aura dropped to Tier %s."
+}
