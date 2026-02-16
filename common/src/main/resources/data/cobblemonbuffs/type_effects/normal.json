@@ -4,14 +4,14 @@
     "triggerType": "CONDITIONAL_TICK",
     "cooldownTicks": 500,
     "displayLabel": "+1 Hunger",
-    "triggerDescription": "Below 10 Hunger"
+    "triggerDescription": "Below 14 Hunger"
   },
   "t2": {
     "effects": [],
     "triggerType": "CONDITIONAL_TICK",
     "cooldownTicks": 400,
     "displayLabel": "+2 Hunger",
-    "triggerDescription": "Below 14 Hunger"
+    "triggerDescription": "Below 17 Hunger"
   },
   "t3": {
     "effects": [

@@ -147,8 +147,8 @@ object ConditionalTickHandler {
             "normal" -> {
                 val threshold = when (effectTier) {
                     AuraTier.T3 -> 17
-                    AuraTier.T2 -> 14
-                    else -> 10
+                    AuraTier.T2 -> 17
+                    else -> 14
                 }
                 player.foodData.foodLevel < threshold
             }

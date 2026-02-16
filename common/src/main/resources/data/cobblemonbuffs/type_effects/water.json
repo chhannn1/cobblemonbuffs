@@ -1,7 +1,7 @@
 {
   "t1": {
     "effects": [
-      { "effectId": "minecraft:water_breathing", "amplifier": 0, "durationTicks": 60 }
+      { "effectId": "minecraft:water_breathing", "amplifier": 0, "durationTicks": 100 }
     ],
     "triggerType": "CONDITIONAL_TICK",
     "cooldownTicks": 240,
@@ -9,7 +9,7 @@
   },
   "t2": {
     "effects": [
-      { "effectId": "minecraft:water_breathing", "amplifier": 0, "durationTicks": 100 }
+      { "effectId": "minecraft:water_breathing", "amplifier": 0, "durationTicks": 160 }
     ],
     "triggerType": "CONDITIONAL_TICK",
     "cooldownTicks": 200,
@@ -17,7 +17,7 @@
   },
   "t3": {
     "effects": [
-      { "effectId": "minecraft:water_breathing", "amplifier": 0, "durationTicks": 160 }
+      { "effectId": "minecraft:water_breathing", "amplifier": 0, "durationTicks": 240 }
     ],
     "triggerType": "CONDITIONAL_TICK",
     "cooldownTicks": 200,
