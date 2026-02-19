@@ -1,26 +1,31 @@
 {
   "t1": {
     "effects": [
-      { "effectId": "minecraft:strength", "amplifier": 0, "durationTicks": 40 }
+      { "effectId": "minecraft:strength", "amplifier": 0, "durationTicks": 60 }
     ],
-    "triggerType": "ON_KILL",
-    "cooldownTicks": 160,
-    "triggerDescription": "On Kill"
+    "triggerType": "ON_ATTACK",
+    "target": "SELF",
+    "cooldownTicks": 120,
+    "triggerDescription": "On Attack"
   },
   "t2": {
     "effects": [
-      { "effectId": "minecraft:strength", "amplifier": 0, "durationTicks": 100 }
+      { "effectId": "minecraft:strength", "amplifier": 0, "durationTicks": 80 },
+      { "effectId": "minecraft:speed", "amplifier": 0, "durationTicks": 60 }
     ],
-    "triggerType": "ON_KILL",
-    "cooldownTicks": 160,
-    "triggerDescription": "On Kill"
+    "triggerType": "ON_ATTACK",
+    "target": "SELF",
+    "cooldownTicks": 100,
+    "triggerDescription": "On Attack"
   },
   "t3": {
     "effects": [
-      { "effectId": "minecraft:strength", "amplifier": 1, "durationTicks": 80 }
+      { "effectId": "minecraft:strength", "amplifier": 1, "durationTicks": 80 },
+      { "effectId": "minecraft:speed", "amplifier": 0, "durationTicks": 80 }
     ],
-    "triggerType": "ON_KILL",
-    "cooldownTicks": 160,
-    "triggerDescription": "On Kill"
+    "triggerType": "ON_ATTACK",
+    "target": "SELF",
+    "cooldownTicks": 80,
+    "triggerDescription": "On Attack"
   }
 }
