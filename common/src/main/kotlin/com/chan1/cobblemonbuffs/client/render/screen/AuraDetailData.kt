@@ -11,7 +11,7 @@ internal val BUFF_DESCRIPTIONS = mapOf(
     "poison" to "Poisons attackers when they hit you. Withers undead mobs instead.",
     "steel" to "Reduces incoming damage when struck.",
     "rock" to "Grants an absorption shield when struck.",
-    "electric" to "Grants a burst of speed after defeating a mob.",
+    "electric" to "Grants a burst of speed when attacking.",
     "fighting" to "Grants strength and speed when attacking. Higher tiers cycle faster.",
     "ghost" to "Phase out when struck, turning invisible to escape. Higher tiers add speed.",
     "dragon" to "Grants strength and resistance when attacking.",

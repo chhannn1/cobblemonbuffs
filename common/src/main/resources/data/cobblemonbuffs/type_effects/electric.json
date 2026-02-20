@@ -3,24 +3,24 @@
     "effects": [
       { "effectId": "minecraft:speed", "amplifier": 0, "durationTicks": 60 }
     ],
-    "triggerType": "ON_KILL",
+    "triggerType": "ON_ATTACK",
     "cooldownTicks": 200,
-    "triggerDescription": "On Kill"
+    "triggerDescription": "On Attack"
   },
   "t2": {
     "effects": [
       { "effectId": "minecraft:speed", "amplifier": 0, "durationTicks": 100 }
     ],
-    "triggerType": "ON_KILL",
+    "triggerType": "ON_ATTACK",
     "cooldownTicks": 160,
-    "triggerDescription": "On Kill"
+    "triggerDescription": "On Attack"
   },
   "t3": {
     "effects": [
       { "effectId": "minecraft:speed", "amplifier": 1, "durationTicks": 80 }
     ],
-    "triggerType": "ON_KILL",
+    "triggerType": "ON_ATTACK",
     "cooldownTicks": 120,
-    "triggerDescription": "On Kill"
+    "triggerDescription": "On Attack"
   }
 }
