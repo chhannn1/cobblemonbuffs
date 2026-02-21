@@ -3,6 +3,8 @@ package com.chan1.cobblemonbuffs.event
 import com.chan1.cobblemonbuffs.buff.BuffManager
 import com.chan1.cobblemonbuffs.buff.BuffRegistry
 import com.chan1.cobblemonbuffs.config.CobblemonBuffsConfig
+import com.chan1.cobblemonbuffs.network.CobblemonBuffsNetwork
+import com.chan1.cobblemonbuffs.network.ConfigSyncPacket
 import com.cobblemon.mod.common.Cobblemon
 import com.cobblemon.mod.common.api.events.CobblemonEvents
 import com.cobblemon.mod.common.api.reactive.ObservableSubscription
@@ -75,9 +77,14 @@ object BuffEventHandler {
     private fun registerLifecycleEvents() {
         PlayerEvent.PLAYER_JOIN.register { player ->
             if (player is ServerPlayer) {
+                val config = CobblemonBuffsConfig.data
+                CobblemonBuffsNetwork.sendConfigSync(player, ConfigSyncPacket(
+                    config.t1Threshold, config.t2Threshold, config.t3Threshold,
+                    config.levelMaxPoints, config.friendshipMaxPoints
+                ))
+
                 BuffManager.markDirty(player.uuid)
                 BuffManager.recalculate(player, forceSync = true)
-
 
                 val party = Cobblemon.storage.getParty(player)
                 partySubscriptions.remove(player.uuid)?.unsubscribe()
@@ -115,7 +122,14 @@ object BuffEventHandler {
             if (BuffRegistry.dirty) {
                 BuffRegistry.clearDirty()
                 ConditionalTickHandler.clearCaches()
+
+                val reloadConfig = CobblemonBuffsConfig.data
+                val configPacket = ConfigSyncPacket(
+                    reloadConfig.t1Threshold, reloadConfig.t2Threshold, reloadConfig.t3Threshold,
+                    reloadConfig.levelMaxPoints, reloadConfig.friendshipMaxPoints
+                )
                 for (player in server.playerList.players) {
+                    CobblemonBuffsNetwork.sendConfigSync(player, configPacket)
                     BuffManager.markDirty(player.uuid)
                     recalculateAndNotify(player)
                 }

@@ -21,7 +21,7 @@ internal val BUFF_DESCRIPTIONS = mapOf(
     "ground" to "Grants haste while deep underground.",
     "dark" to "Grants night vision at night. Higher tiers add strength.",
     "fairy" to "Regenerates health when low on HP.",
-    "flying" to "Grants slow falling and jump boost while airborne.",
+    "flying" to "Grants a burst of speed when hit. Higher tiers add jump boost.",
     "normal" to "Restores hunger over time when food is low.",
     "psychic" to "Lifts hostile enemies into the air when you strike them. Only affects hostile mobs or mobs targeting you."
 )

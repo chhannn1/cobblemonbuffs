@@ -5,7 +5,7 @@ import com.chan1.cobblemonbuffs.buff.BuffRegistry
 import com.chan1.cobblemonbuffs.buff.PartySlotInfo
 import com.chan1.cobblemonbuffs.client.AuraColors
 import com.chan1.cobblemonbuffs.client.render.screen.*
-import com.chan1.cobblemonbuffs.config.CobblemonBuffsConfig
+import com.chan1.cobblemonbuffs.client.ClientConfigState
 import com.chan1.cobblemonbuffs.client.render.screen.helpers.fillCobblemonFrame
 import com.chan1.cobblemonbuffs.client.render.screen.helpers.fillRoundedRect
 import com.chan1.cobblemonbuffs.utils.render.TypeSpriteSheet
@@ -159,7 +159,7 @@ internal object ContentRenderer {
         iy += font.lineHeight + 2
 
         val score = aura.score
-        val maxScore = (CobblemonBuffsConfig.data.levelMaxPoints + CobblemonBuffsConfig.data.friendshipMaxPoints).coerceAtLeast(1)
+        val maxScore = (ClientConfigState.levelMaxPoints + ClientConfigState.friendshipMaxPoints).coerceAtLeast(1)
         val fillFrac = (score / maxScore.toFloat()).coerceIn(0f, 1f)
         val barColor = when (aura.tier) { 3 -> BAR_T3_COLOR; 2 -> BAR_T2_COLOR; else -> BAR_T1_COLOR }
         g.fill(cx - 1, iy - 1, cx + cw + 1, iy + BAR_HEIGHT + 1, BAR_INSET)

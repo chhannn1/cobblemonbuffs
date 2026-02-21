@@ -9,7 +9,7 @@ import com.chan1.cobblemonbuffs.client.render.screen.components.SidebarRenderer
 import com.chan1.cobblemonbuffs.client.render.screen.components.TypeInfoPopupRenderer
 import com.chan1.cobblemonbuffs.client.render.screen.helpers.fillCobblemonFrame
 import com.chan1.cobblemonbuffs.client.render.screen.helpers.fillRoundedRect
-import com.chan1.cobblemonbuffs.config.CobblemonBuffsConfig
+import com.chan1.cobblemonbuffs.client.ClientConfigState
 import com.cobblemon.mod.common.client.render.models.blockbench.FloatingState
 import net.minecraft.client.gui.GuiGraphics
 import net.minecraft.client.gui.screens.Screen
@@ -40,8 +40,8 @@ class AuraDetailScreen : Screen(Component.literal("Aura Overview")) {
 
         val partySlots = ClientAuraState.partySlots
         val auras = ClientAuraState.auras
-        val t2 = CobblemonBuffsConfig.data.t2Threshold
-        val t3 = CobblemonBuffsConfig.data.t3Threshold
+        val t2 = ClientConfigState.t2Threshold
+        val t3 = ClientConfigState.t3Threshold
 
         val selectedAuras = auras.filter { it.providerSlot == selectedSlot }
         val selectedSlotInfo = partySlots.getOrNull(selectedSlot)
@@ -115,7 +115,7 @@ class AuraDetailScreen : Screen(Component.literal("Aura Overview")) {
         if (popupType != null) {
             val typeBuff = BuffRegistry.getForType(popupType)
             if (typeBuff != null) {
-                val t1 = CobblemonBuffsConfig.data.t1Threshold
+                val t1 = ClientConfigState.t1Threshold
                 val bounds = TypeInfoPopupRenderer.computeBounds(font, width, height, typeBuff, t1, t2, t3)
                 cachedPopupBounds = bounds
                 TypeInfoPopupRenderer.render(g, font, bounds, width, height,

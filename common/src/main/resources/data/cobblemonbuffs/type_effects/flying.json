@@ -1,28 +1,28 @@
 {
   "t1": {
     "effects": [
-      { "effectId": "minecraft:slow_falling", "amplifier": 0, "durationTicks": 100 }
+      { "effectId": "minecraft:speed", "amplifier": 0, "durationTicks": 60 }
     ],
-    "triggerType": "CONDITIONAL_TICK",
-    "cooldownTicks": 200,
-    "triggerDescription": "While Airborne"
+    "triggerType": "ON_HIT_RECEIVED",
+    "cooldownTicks": 300,
+    "triggerDescription": "When Hit"
   },
   "t2": {
     "effects": [
-      { "effectId": "minecraft:slow_falling", "amplifier": 0, "durationTicks": 150 },
+      { "effectId": "minecraft:speed", "amplifier": 0, "durationTicks": 80 },
       { "effectId": "minecraft:jump_boost", "amplifier": 0, "durationTicks": 60 }
     ],
-    "triggerType": "CONDITIONAL_TICK",
-    "cooldownTicks": 200,
-    "triggerDescription": "While Airborne"
+    "triggerType": "ON_HIT_RECEIVED",
+    "cooldownTicks": 240,
+    "triggerDescription": "When Hit"
   },
   "t3": {
     "effects": [
-      { "effectId": "minecraft:slow_falling", "amplifier": 0, "durationTicks": 200 },
+      { "effectId": "minecraft:speed", "amplifier": 1, "durationTicks": 100 },
       { "effectId": "minecraft:jump_boost", "amplifier": 0, "durationTicks": 80 }
     ],
-    "triggerType": "CONDITIONAL_TICK",
+    "triggerType": "ON_HIT_RECEIVED",
     "cooldownTicks": 200,
-    "triggerDescription": "While Airborne"
+    "triggerDescription": "When Hit"
   }
 }

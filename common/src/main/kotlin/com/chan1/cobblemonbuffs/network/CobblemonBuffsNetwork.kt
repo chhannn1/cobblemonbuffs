@@ -11,11 +11,19 @@ object CobblemonBuffsNetwork {
     lateinit var AURA_SYNC_TYPE: MessageType
         private set
 
+    lateinit var CONFIG_SYNC_TYPE: MessageType
+        private set
+
     fun init() {
         AURA_SYNC_TYPE = NETWORK.registerS2C("aura_sync", ::AuraSyncPacket)
+        CONFIG_SYNC_TYPE = NETWORK.registerS2C("config_sync", ::ConfigSyncPacket)
     }
 
     fun sendAuraSync(player: ServerPlayer, packet: AuraSyncPacket) {
+        packet.sendTo(player)
+    }
+
+    fun sendConfigSync(player: ServerPlayer, packet: ConfigSyncPacket) {
         packet.sendTo(player)
     }
 }

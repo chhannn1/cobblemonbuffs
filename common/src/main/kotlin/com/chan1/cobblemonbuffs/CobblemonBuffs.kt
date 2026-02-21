@@ -16,6 +16,7 @@ object CobblemonBuffs {
     fun init(configDir: Path) {
         CobblemonBuffsConfig.init(configDir)
         BuffRegistry.init()
+        TypeEffectReloadListener.init(configDir)
         TypeEffectReloadListener.register()
         CobblemonBuffsNetwork.init()
         BuffEventHandler.init()
