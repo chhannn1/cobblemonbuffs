@@ -77,14 +77,18 @@ object BuffEventHandler {
     private fun registerLifecycleEvents() {
         PlayerEvent.PLAYER_JOIN.register { player ->
             if (player is ServerPlayer) {
-                val config = CobblemonBuffsConfig.data
-                CobblemonBuffsNetwork.sendConfigSync(player, ConfigSyncPacket(
-                    config.t1Threshold, config.t2Threshold, config.t3Threshold,
-                    config.levelMaxPoints, config.friendshipMaxPoints
-                ))
+                player.server.execute {
+                    if (player.isRemoved) return@execute
 
-                BuffManager.markDirty(player.uuid)
-                BuffManager.recalculate(player, forceSync = true)
+                    val config = CobblemonBuffsConfig.data
+                    CobblemonBuffsNetwork.sendConfigSync(player, ConfigSyncPacket(
+                        config.t1Threshold, config.t2Threshold, config.t3Threshold,
+                        config.levelMaxPoints, config.friendshipMaxPoints
+                    ))
+
+                    BuffManager.markDirty(player.uuid)
+                    BuffManager.recalculate(player, forceSync = true)
+                }
 
                 val party = Cobblemon.storage.getParty(player)
                 partySubscriptions.remove(player.uuid)?.unsubscribe()
